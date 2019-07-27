@@ -104,5 +104,5 @@ llist.push(9)
 llist.append(6)
 llist.insertAfter(llist.head.next, 2) 
   
-print ("Created DLL is: "), 
+print ("Double Linked List : "), 
 llist.printList(llist.head)
