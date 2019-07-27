@@ -75,7 +75,7 @@ public class Doublelinkedlist {
 			node = node.next; 
 		} 
 		System.out.println(); 
-		System.out.println("Traversal dari arah belakang"); 
+		System.out.println("Traversal dari arah sebaliknya"); 
 		while (last != null) { 
 			System.out.print(last.data + " "); 
 			last = last.prev; 
@@ -96,7 +96,7 @@ public class Doublelinkedlist {
 
 		dll.InsertAfter(dll.head.next, 2); 
 
-		System.out.println("Created DLL is: "); 
+		System.out.println("Double Linked List : "); 
 		dll.printlist(dll.head); 
 	} 
 }
