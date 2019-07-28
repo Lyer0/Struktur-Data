@@ -1,5 +1,5 @@
 def bulan_check(bulan):
-    if bulan > 0 and bulan <= 12: ## If month is between 1 and 12, return True.
+    if bulan > 0 and bulan <= 12:
         return True
     else:
         return False
@@ -16,17 +16,17 @@ def hari_check(bulan, hari):
 
 
 def tahun_check(tahun):
-    if len(tahun) >= 1 and len(tahun) <= 4: ## Check if year has between 1 to 4 numbers and return True.
+    if len(tahun) >= 1 and len(tahun) <= 4:
         return True
     else:
         return False
 
 
 def main():
-    tanggal = str(input("Tulis tanggal format hari/bulan/tahun : ")) ## Input date in the given format.
+    tanggal = str(input("Tulis tanggal format hari/bulan/tahun : "))
 
     try:
-        hari,bulan,tahun = tanggal.split("/") ## split the date into 3 separate variables.
+        hari,bulan,tahun = tanggal.split("/")
 
         hari_valid = hari_check(int(bulan),int(hari)) 
         
@@ -34,7 +34,7 @@ def main():
 
         tahun_valid = tahun_check(tahun)
 
-        if hari_valid and bulan_valid and tahun_valid: ## check if all 3 variables are valid or True
+        if hari_valid and bulan_valid and tahun_valid:
             print("Tanggal {0} Valid.".format(tanggal))
 
         else:
